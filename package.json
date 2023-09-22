@@ -1,0 +1,30 @@
+{
+  "name": "avaliacao-nodejs",
+  "version": "1.0.0",
+  "description": "Isso aqui é a prova",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest test/**/*.test.js",
+    "test:cov": "jest test/index.test.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoPires505/Avaliacao-NodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoPires505/Avaliacao-NodeJs/issues"
+  },
+  "homepage": "https://github.com/JoaoPires505/Avaliacao-NodeJs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "jest": "29.6.2",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1"
+  }
+}

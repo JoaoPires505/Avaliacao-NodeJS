@@ -1,0 +1,46 @@
+/*const express = require("express");
+const { soma } = require("./somar");
+const {subtracao} = require("./subtrair");
+const {multiplicacao} = require("./multiplicar");
+const {divisao} = require("./dividir");
+const {potencia} = require("./potencia");  
+const {raiz} = require("./raiz");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.json({message: "Hello World"});
+});
+
+app.post("/api/somar", (req, res) => {
+    const result = soma (req.body.num1, req.body.num2)
+    res.status(200).json({
+        return: `resultado`
+    }) 
+})
+app.post("/api/subtrair", (req, res) => {
+    const result = subtracao(req.body.num1, req.body.num2)
+    res.status(200).json({
+    message: `resultado: ${result}`
+    })
+
+app.post('/api/multiplicar', (req, res) => {
+    const result = multiplicacao(req.body.num1, req.body.num2)
+    res.status(200).json({
+        message: `resultado: ${result}`
+    })
+})
+
+app.post('/api/dividir', (req, res) => {
+    const result = dividisao(req.body.num1, req.body.num2)
+    res.status(200).json({
+        message: `resultado: ${result}`
+    })
+})
+
+app.post('/api/potencia', (req, res) => {
+    const result = potencia(req.body.num1, req.body.num2)
+    res.status(200).json({
+        message: `resultado: ${result}`
+    })
+})*/
