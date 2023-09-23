@@ -1,16 +1,19 @@
 const express = require("express");
-const { multiplicacao } = require("./funcoes");
+const router = require("./src/routes/index.js");
+/* const { multiplicacao } = require("./funcoes");
 const { soma } = require("./funcoes"); 
 const { subtracao } = require("./funcoes");
 const { divisao } = require("./funcoes");
-const { potencia } = require("./funcoes");
+const { potencia } = require("./funcoes"); */
 const app = express();
+app.use(express.json());
+app.use(router);
 
 app.get("/", (req, res) => {
     res.json({message: "Hello World"});
 });
 
-app.post("/api/soma", (req, res) => {
+/* app.post("/api/soma", (req, res) => {
     const result = soma(req.body.num1 + req.body.num2)
     res.status(200).json({
         return: `resultado`
@@ -50,7 +53,7 @@ app.post('/api/raiz', (req, res) => {
         message: `resultado: ${result}`
     });
 });
-
+ */
 
 
 
